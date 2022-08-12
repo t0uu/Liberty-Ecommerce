@@ -23,7 +23,7 @@ export const MasVendidos = () => {
             Data.slice(0,7).map(Product => (
                 <Box  key={Product.id} margin={'2rem'}>
                         <Link as={LinkRouter}  to={`/product/${Product.Nombre}`} style={{textDecoration:'none',color:'black'}}>
-                <Box  width={{xs:'225px'}} border={'1px solid rgba(0,0,0,0.7)'} boxShadow={'0px 0px 4px 4px rgba(0, 0, 0, 0.03)'}>
+                <Box  width={{xs:'230px',md:'300px'}} border={'1px solid rgba(0,0,0,0.7)'} boxShadow={'0px 0px 4px 4px rgba(0, 0, 0, 0.03)'}>
                    <Box>
                     <img onMouseOver={e => e.currentTarget.src = `${Product.Image[1]}`} onMouseOut={e => e.currentTarget.src = `${Product.Image[0]}`} src={Product.Image[0]} width={'100%'} />
                    </Box>

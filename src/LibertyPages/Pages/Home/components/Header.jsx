@@ -39,7 +39,7 @@ export const Header = () => {
    whileInView={{ opacity: 1,transition:{duration: 1}}}>
     <Box display={{xs:'none',sm:'block',md:'block'}} width={'100%'} height={'100vh'} sx={{backgroundImage: `url('https://res.cloudinary.com/do5jvqtn9/image/upload/v1660265869/Liberty-Ecommerce/afiq-fatah-1cVmsgAkm9A-unsplash_yp81fc.jpg')`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'0 0',}}>
       <Box display={'flex'} justifyContent={{sm:'center',md:'end'}}>
-        <Box width={{sm:'600px'}}  mt={20} mr={{md:'10px'}} textAlign={'center'}>
+        <Box width={{sm:'600px'}}  mt={20} mr={{md:'2rem'}} textAlign={'center'}>
       <Typography color={'white'} fontWeight={700} fontSize={'3rem'}>SIEMPRE HACIA DELANTE</Typography>
         <Typography color={'white'} fontWeight={700} fontSize={'3rem'}>NUNCA PARAMOS</Typography>
         <Button style={{fontSize:'2rem',padding:'1rem 1rem',marginTop:'9rem',color:'white',background:'#181818'}} onClick={() => navigate('/Shop')}>

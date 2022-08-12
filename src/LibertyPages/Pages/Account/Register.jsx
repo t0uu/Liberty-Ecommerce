@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 import { AnimatedPage } from '../../Components/AnimatedPage/AnimatedPage'
 import { useForm } from '../../../hooks/useForm'
 import { startCreatingUserWithEmailPassword } from '../../../store/auth/thunks'
-import {useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const formData = {

@@ -130,7 +130,7 @@ export const ProductView = ({data}) => {
       {data.filter(products => products.Nombre === product).map(products => (
          <>
          <Box width={{xs:'100%',sm:'100%'}}>
-         {/* <Carousel defaultControlsConfig={{
+         <Carousel defaultControlsConfig={{
           nextButtonText: '>',
           nextButtonStyle: {
             color: 'black',
@@ -148,7 +148,7 @@ export const ProductView = ({data}) => {
           <img src={`${products.Image[1]}`} width={'100%'}/>
           <img src={`${products.Image[2]}`} width={'100%'} />
           <img src={`${products.Image[3]}`}  width={'100%'}/>
-         </Carousel> */}
+         </Carousel>
          </Box>
          <Box >
          <Box width={'100%'} justifyContent={'center'} display={'flex'} flexDirection={'column'}>

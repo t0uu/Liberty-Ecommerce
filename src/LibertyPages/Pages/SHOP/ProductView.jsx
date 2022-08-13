@@ -1,14 +1,15 @@
 import { Accordion, AccordionDetails, AccordionSummary, Button, FormControl, InputLabel, MenuItem, Select,Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, {useState } from 'react'
-import { useDispatch} from 'react-redux/es/exports';
+import { useDispatch, useSelector } from 'react-redux/es/exports';
 import {useParams} from 'react-router-dom'
+import { Swal } from 'sweetalert2/dist/sweetalert2';
 import 'sweetalert2/src/sweetalert2.scss'
 import { onAddToCart } from '../../../store/Cart/CartSlice';
 import { Footer, Navbar } from '../../Components';
 import { AnimatedPage } from '../../Components/AnimatedPage/AnimatedPage';
 import {motion} from 'framer-motion'
-import Carousel from 'nuka-carousel'
+// import Carousel from 'nuka-carousel'
 export const ProductView = ({data}) => {
 
   const dispatch = useDispatch()
@@ -129,7 +130,7 @@ export const ProductView = ({data}) => {
       {data.filter(products => products.Nombre === product).map(products => (
          <>
          <Box width={{xs:'100%',sm:'100%'}}>
-         <Carousel defaultControlsConfig={{
+         {/* <Carousel defaultControlsConfig={{
           nextButtonText: '>',
           nextButtonStyle: {
             color: 'black',
@@ -147,7 +148,7 @@ export const ProductView = ({data}) => {
           <img src={`${products.Image[1]}`} width={'100%'}/>
           <img src={`${products.Image[2]}`} width={'100%'} />
           <img src={`${products.Image[3]}`}  width={'100%'}/>
-         </Carousel>
+         </Carousel> */}
          </Box>
          <Box >
          <Box width={'100%'} justifyContent={'center'} display={'flex'} flexDirection={'column'}>

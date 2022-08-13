@@ -1,7 +1,5 @@
 1. Testear lo siguiente
 
-.Crear Usuario.
-.Iniciar Sesión.
 .Añadir al Carrito.
 .Borrar elemento del carrito.
 .Sumar Producto.
